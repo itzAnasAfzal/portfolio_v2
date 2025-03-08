@@ -3204,6 +3204,13 @@ form textarea:required:valid {
     opacity: 0;
     transition: all 0.2s ease-in-out;
 }
+.logo__image .black {
+    filter: drop-shadow(1px 0px 0.2px var(--t-accent--light));
+}
+
+.logo__image .white {
+    filter: drop-shadow(1px 0px 0.2px var(--t-accent--dark));
+}
 
 /* .logo__image svg {
     width: 100%;
