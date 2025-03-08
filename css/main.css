@@ -3250,7 +3250,7 @@ form textarea:required:valid {
     -moz-border-radius: var(--_radius-l);
     border-radius: var(--_radius-l);
     background: linear-gradient(0deg, var(--secondary), var(--accent));
-    animation: rotation 5s infinite ease-in-out;
+    animation: rotation 4.5s infinite ease-in-out;
 }
 
 .avatar__image .img_container {
