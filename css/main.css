@@ -78,17 +78,22 @@
     --base--light: #e6ebf4;
     --base-tint--light: #ebf0f7;
     --base-shade--light: #bdc1c8;
-    --accent--light: #aa70e0;
-    --secondary--light: #7059e2;
-    --secondary-rgba--light: rgba(112, 89, 226, 0.3);
+    /* --accent--light: #aa70e0;
+    --secondary--light: #7059e2; */
+    /* --secondary-rgba--light: rgba(112, 89, 226, 0.3); */
+    --accent--light: #ff2e63;
+    --secondary--light: #08d9d6;
+    --secondary-rgba--light: rgba(8, 217, 214, 0.3);
     --stroke-controls--light: #a8b0c1;
     --stroke-controls-neutral--light: rgba(0, 0, 0, 0.3);
     --stroke-elements--light: #d1d5e0;
     --t-bright--light: #22232c;
     --t-medium--light: #424550;
     --t-muted--light: #666a79;
-    --t-accent--light: #8f56cc;
-    --t-secondary--light: #5d4ec4;
+    /* --t-accent--light: #8f56cc;
+    --t-secondary--light: #5d4ec4; */
+    --t-accent--light: #ff2e63;
+    --t-secondary--light: #08d9d6;
     --t-disabled--light: #717586;
     --t-placeholder--light: #969bb2;
     --base-opp--light: #111111;
@@ -102,17 +107,22 @@
     --base--dark: #111111;
     --base-tint--dark: #161616;
     --base-shade--dark: #000000;
-    --accent--dark: #e4b8bf;
+    /* --accent--dark: #e4b8bf;
     --secondary--dark: #cec4ef;
-    --secondary-rgba--dark: rgba(206, 196, 239, 0.2);
+    --secondary-rgba--dark: rgba(206, 196, 239, 0.2); */
+    --accent--dark: #fc6588; /* Lighter version of #FF2E63 */
+    --secondary--dark: #4ce4e2; /* Lighter version of #08D9D6 */
+    --secondary-rgba--dark: rgba(86, 226, 224, 0.3); /* Adjusted transparency */
     --stroke-controls--dark: #4b4b51;
     --stroke-controls-neutral--dark: rgba(255, 255, 255, 0.3);
     --stroke-elements--dark: #303033;
     --t-bright--dark: #e9e9f1;
     --t-medium--dark: #c7c6d3;
     --t-muted--dark: #a1a1af;
-    --t-accent--dark: #e1bac5;
-    --t-secondary--dark: #cec4ef;
+    /* --t-accent--dark: #e1bac5;
+    --t-secondary--dark: #cec4ef; */
+    --t-accent--dark: #fc92a9; /* Even softer tint for text */
+    --t-secondary--dark: #90eceb; /* Softer tint for text */
     --t-disabled--dark: #8b8a91;
     --t-placeholder--dark: #58585e;
     --base-opp--dark: #fafafa;
