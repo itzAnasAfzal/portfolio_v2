@@ -81,8 +81,8 @@
     /* --accent--light: #aa70e0;
     --secondary--light: #7059e2; */
     /* --secondary-rgba--light: rgba(112, 89, 226, 0.3); */
-    --accent--light: #ff2e63;
-    --secondary--light: #08d9d6;
+    --accent--light: #fd5e86;
+    --secondary--light: #40e4e1;
     --secondary-rgba--light: rgba(8, 217, 214, 0.3);
     --stroke-controls--light: #a8b0c1;
     --stroke-controls-neutral--light: rgba(0, 0, 0, 0.3);
@@ -92,8 +92,8 @@
     --t-muted--light: #666a79;
     /* --t-accent--light: #8f56cc;
     --t-secondary--light: #5d4ec4; */
-    --t-accent--light: #fd5e86;
-    --t-secondary--light: #40e4e1;
+    --t-accent--light: #ff2e63;
+    --t-secondary--light: #08d9d6;
     --t-disabled--light: #717586;
     --t-placeholder--light: #969bb2;
     --base-opp--light: #111111;
@@ -3178,7 +3178,7 @@ form textarea:required:valid {
 }
 
 .avatar__logo {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 @media only screen and (min-width: 1400px) {
     .avatar__logo {
@@ -3203,13 +3203,7 @@ form textarea:required:valid {
     height: auto;
     opacity: 0;
     transition: all 0.2s ease-in-out;
-}
-.logo__image .black {
-    filter: drop-shadow(1px 0px 0.2px var(--t-accent--light));
-}
-
-.logo__image .white {
-    filter: drop-shadow(1px 0px 0.2px var(--t-accent--dark));
+    filter: drop-shadow(1px 0px 0.2px var(--t-accent));
 }
 
 /* .logo__image svg {
@@ -3255,12 +3249,8 @@ form textarea:required:valid {
     height: 160%;
     -moz-border-radius: var(--_radius-l);
     border-radius: var(--_radius-l);
-    background: linear-gradient(
-        0deg,
-        var(--secondary--light),
-        var(--accent--light)
-    );
-    animation: rotation_481 10s infinite linear;
+    background: linear-gradient(0deg, var(--secondary), var(--accent));
+    animation: rotation 5s infinite ease-in-out;
 }
 
 .avatar__image .img_container {
@@ -3269,7 +3259,9 @@ form textarea:required:valid {
     z-index: 2;
     -moz-border-radius: var(--_radius-l);
     border-radius: var(--_radius-l);
-    background-color: #c9b9d9;
+
+    background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 90%);
+    /* filter: blur(10px); */
     /* object-fit: contain; */
 }
 
@@ -3279,13 +3271,13 @@ form textarea:required:valid {
     object-fit: cover;
 }
 
-@keyframes rotation_481 {
+@keyframes rotation {
     0% {
         transform: rotateZ(0deg);
     }
 
     0% {
-        transform: rotateZ(360deg);
+        transform: rotateZ(180deg);
     }
 }
 
