@@ -3237,10 +3237,56 @@ form textarea:required:valid {
 }
 
 .avatar__image {
+    position: relative;
     overflow: hidden;
     -moz-border-radius: var(--_radius-l);
     border-radius: var(--_radius-l);
     margin-bottom: 0.8rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.avatar__image::before {
+    position: absolute;
+    content: " ";
+    display: block;
+    width: 160px;
+    height: 160%;
+    -moz-border-radius: var(--_radius-l);
+    border-radius: var(--_radius-l);
+    background: linear-gradient(
+        0deg,
+        var(--secondary--light),
+        var(--accent--light)
+    );
+    animation: rotation_481 6000ms infinite linear;
+}
+
+.avatar__image .img_container {
+    width: 99%;
+    height: 99%;
+    z-index: 2;
+    -moz-border-radius: var(--_radius-l);
+    border-radius: var(--_radius-l);
+    background-color: #c9b9d9;
+    /* object-fit: contain; */
+}
+
+.img_container img {
+    width: 99%;
+    height: 99%;
+    object-fit: cover;
+}
+
+@keyframes rotation_481 {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    0% {
+        transform: rotateZ(360deg);
+    }
 }
 
 .avatar__socials {
