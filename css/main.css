@@ -92,8 +92,8 @@
     --t-muted--light: #666a79;
     /* --t-accent--light: #8f56cc;
     --t-secondary--light: #5d4ec4; */
-    --t-accent--light: #ff2e63;
-    --t-secondary--light: #08d9d6;
+    --t-accent--light: #fd5e86;
+    --t-secondary--light: #40e4e1;
     --t-disabled--light: #717586;
     --t-placeholder--light: #969bb2;
     --base-opp--light: #111111;
@@ -110,8 +110,8 @@
     /* --accent--dark: #e4b8bf;
     --secondary--dark: #cec4ef;
     --secondary-rgba--dark: rgba(206, 196, 239, 0.2); */
-    --accent--dark: #fc6588; /* Lighter version of #FF2E63 */
-    --secondary--dark: #4ce4e2; /* Lighter version of #08D9D6 */
+    --accent--dark: #08d9d6; /* Lighter version of #FF2E63 */
+    --secondary--dark: #fd5e86; /* Lighter version of #08D9D6 */
     --secondary-rgba--dark: rgba(86, 226, 224, 0.3); /* Adjusted transparency */
     --stroke-controls--dark: #4b4b51;
     --stroke-controls-neutral--dark: rgba(255, 255, 255, 0.3);
@@ -121,9 +121,9 @@
     --t-muted--dark: #a1a1af;
     /* --t-accent--dark: #e1bac5;
     --t-secondary--dark: #cec4ef; */
-    --t-accent--dark: #fc92a9; /* Even softer tint for text */
-    --t-secondary--dark: #90eceb; /* Softer tint for text */
-    --t-disabled--dark: #8b8a91;
+    --t-accent--dark: #40e4e1; /* Even softer tint for text */
+    --t-secondary--dark: #ff2e63; /* Softer tint for text */
+    --t-disabled--dark: #abaab1;
     --t-placeholder--dark: #58585e;
     --base-opp--dark: #fafafa;
     --t-opp-bright--dark: #121319;
@@ -3194,12 +3194,21 @@ form textarea:required:valid {
 .logo__image {
     width: 200px;
     height: 35px;
+    position: relative;
 }
 
-.logo__image svg {
+.logo__image img {
+    position: absolute;
     width: 100%;
     height: auto;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
 }
+
+/* .logo__image svg {
+    width: 100%;
+    height: auto;
+} */
 @media only screen and (min-width: 1400px) {
     .logo__image {
         width: 220px;
