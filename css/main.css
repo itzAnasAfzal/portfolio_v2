@@ -66,10 +66,10 @@
     --_size: 1.6rem;
     --_font-default: "Syne", sans-serif;
     --_font-accent: "Syne", sans-serif;
-    --_radius-s: 1.5rem;
-    --_radius-m: 2.2rem;
-    --_radius-l: 3rem;
-    --_radius-xl: 3.6rem;
+    --_radius-s: 1rem;
+    --_radius-m: 1.5rem;
+    --_radius-l: 2.2rem;
+    --_radius-xl: 3rem;
     --_animspeed-fast: 0.1s;
     --_animspeed-medium: 0.3s;
     --_animspeed-slow: 0.6s;
