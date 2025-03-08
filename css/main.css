@@ -3182,7 +3182,7 @@ form textarea:required:valid {
 } */
 
 .logo__image {
-    width: 80%;
+    width: 200px;
     height: 35px;
 }
 
@@ -3192,8 +3192,8 @@ form textarea:required:valid {
 }
 @media only screen and (min-width: 1400px) {
     .logo__image {
-        width: 75px;
-        height: 75px;
+        width: 220px;
+        height: 40px;
     }
 }
 
