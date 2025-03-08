@@ -3260,7 +3260,7 @@ form textarea:required:valid {
         var(--secondary--light),
         var(--accent--light)
     );
-    animation: rotation_481 6000ms infinite linear;
+    animation: rotation_481 10s infinite linear;
 }
 
 .avatar__image .img_container {
