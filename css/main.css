@@ -81,8 +81,9 @@
     /* --accent--light: #aa70e0;
     --secondary--light: #7059e2; */
     /* --secondary-rgba--light: rgba(112, 89, 226, 0.3); */
-    --accent--light: #fd5e86;
-    --secondary--light: #40e4e1;
+    --accent--light: #ff6d92;
+    --secondary--light: #52e4e2;
+
     --secondary-rgba--light: rgba(8, 217, 214, 0.3);
     --stroke-controls--light: #a8b0c1;
     --stroke-controls-neutral--light: rgba(0, 0, 0, 0.3);
@@ -94,6 +95,7 @@
     --t-secondary--light: #5d4ec4; */
     --t-accent--light: #ff2e63;
     --t-secondary--light: #08d9d6;
+
     --t-disabled--light: #717586;
     --t-placeholder--light: #969bb2;
     --base-opp--light: #111111;
@@ -110,8 +112,8 @@
     /* --accent--dark: #e4b8bf;
     --secondary--dark: #cec4ef;
     --secondary-rgba--dark: rgba(206, 196, 239, 0.2); */
-    --accent--dark: #08d9d6; /* Lighter version of #FF2E63 */
-    --secondary--dark: #fd5e86; /* Lighter version of #08D9D6 */
+    --accent--dark: #52e4e2;
+    --secondary--dark: #ff6d92;
     --secondary-rgba--dark: rgba(86, 226, 224, 0.3); /* Adjusted transparency */
     --stroke-controls--dark: #4b4b51;
     --stroke-controls-neutral--dark: rgba(255, 255, 255, 0.3);
@@ -121,8 +123,8 @@
     --t-muted--dark: #a1a1af;
     /* --t-accent--dark: #e1bac5;
     --t-secondary--dark: #cec4ef; */
-    --t-accent--dark: #40e4e1; /* Even softer tint for text */
-    --t-secondary--dark: #ff2e63; /* Softer tint for text */
+    --t-accent--dark: #08d9d6;
+    --t-secondary--dark: #ff2e63;
     --t-disabled--dark: #abaab1;
     --t-placeholder--dark: #58585e;
     --base-opp--dark: #fafafa;
