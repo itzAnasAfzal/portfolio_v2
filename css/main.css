@@ -618,6 +618,7 @@ h1 {
         var(--t-accent) 0%,
         var(--t-secondary) 80%
     );
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -787,6 +788,7 @@ h2 {
         var(--t-accent) 0%,
         var(--t-secondary) 80%
     );
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -3448,6 +3450,7 @@ form textarea:required:valid {
         var(--t-accent) 0%,
         var(--t-secondary) 80%
     );
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -3937,6 +3940,7 @@ form textarea:required:valid {
         var(--t-accent) 0%,
         var(--t-secondary) 80%
     );
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -4303,6 +4307,7 @@ form textarea:required:valid {
         var(--t-accent) 0%,
         var(--t-secondary) 80%
     );
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
