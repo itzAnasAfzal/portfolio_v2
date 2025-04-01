@@ -24,6 +24,7 @@
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         <!-- Template Styles End -->
 
+        <link rel="manifest" href="manifest.json" />
         <!-- Custom Browser Color Start -->
         <meta
             name="theme-color"
@@ -2092,6 +2093,18 @@
                 const delta = max - min;
                 return (direction = 1) =>
                     (min + delta * Math.random()) * direction;
+            }
+
+            if ("serviceWorker" in navigator) {
+                navigator.serviceWorker
+                    .register("js/service-worker.js")
+                    .then(() => console.log("Service Worker Registered!"))
+                    .catch((error) =>
+                        console.log(
+                            "Service Worker Registration Failed!",
+                            error
+                        )
+                    );
             }
         </script>
         <script src="js/app.js"></script>

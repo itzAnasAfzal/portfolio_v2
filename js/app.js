@@ -29,7 +29,7 @@
 //  12. Detecting Mobile/Desktop
 //  13. PhotoSwipe Gallery Images Replace
 //  14. Color Switch
-//
+//  15. Typing Text Animation
 // ------------------------------------------------
 // Table of Contents End
 // ------------------------------------------------
