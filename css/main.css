@@ -2455,7 +2455,17 @@ form textarea:required:valid {
     }
 }
 
+.home_content {
+    height: 27rem;
+}
+.home_text {
+    transition: all 0.4s ease-in-out;
+}
+
 @media only screen and (min-width: 768px) {
+    .home_content {
+        height: auto;
+    }
     .headline {
         padding: 0 6rem;
     }
