@@ -2094,18 +2094,6 @@
                 return (direction = 1) =>
                     (min + delta * Math.random()) * direction;
             }
-
-            if ("serviceWorker" in navigator) {
-                navigator.serviceWorker
-                    .register("js/service-worker.js")
-                    .then(() => console.log("Service Worker Registered!"))
-                    .catch((error) =>
-                        console.log(
-                            "Service Worker Registration Failed!",
-                            error
-                        )
-                    );
-            }
         </script>
         <script src="js/app.js"></script>
         <script src="js/gallery-init.js"></script>
