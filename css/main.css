@@ -2456,16 +2456,17 @@ form textarea:required:valid {
 }
 
 .home_content {
-    height: 27rem;
-}
-.home_text {
     transition: all 0.4s ease-in-out;
+}
+@media (max-width: 480px) {
+    /* Adjust breakpoint as needed */
+    .typing_text::before {
+        content: "\A"; /* \A represents a newline */
+        white-space: pre; /* Ensures the newline is respected */
+    }
 }
 
 @media only screen and (min-width: 768px) {
-    .home_content {
-        height: auto;
-    }
     .headline {
         padding: 0 6rem;
     }
