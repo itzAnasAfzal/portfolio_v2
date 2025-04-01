@@ -2435,6 +2435,25 @@ form textarea:required:valid {
     position: relative;
     padding: 0 1.5rem;
 }
+.typing_text::after {
+    content: "|";
+    visibility: visible;
+    animation: blink 0.8s steps(1, start) infinite;
+    display: inline-block;
+}
+
+@keyframes blink {
+    0% {
+        visibility: visible;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .headline {
         padding: 0 6rem;
