@@ -386,7 +386,6 @@ $(function () {
     //     });
     //     return false;
     // });
-
     document
         .getElementById("contact-form")
         .addEventListener("submit", function (e) {
@@ -405,7 +404,6 @@ $(function () {
                 .catch((error) => {
                     console.error("Error:", error);
                     alert("Something went wrong. Please try again later.");
-                    console.log(response.headers);
                 });
         });
     // --------------------------------------------- //
