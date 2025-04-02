@@ -2,10 +2,11 @@
     "name": "Muhammad Anas Afzal - Portfolio",
     "short_name": "Anas Afzal",
     "description": "Showcasing Muhammad Anas Afzal's skills, projects, and expertise in web development, graphic designing, and technology solutions.",
-    "start_url": "/",
+    "start_url": "/portfolio_v2/",
     "display": "standalone",
     "theme_color": "#111111",
     "background_color": "#ffffff",
+    "orientation": "portrait",
     "icons": [
         {
             "src": "logos/portfolio-icon-192x192.png",
