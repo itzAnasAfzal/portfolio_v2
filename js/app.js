@@ -394,7 +394,7 @@ $(function () {
 
             const formData = new FormData(this);
 
-            fetch("http://anasafzal.rf.gd/mail.php", {
+            fetch("https://anasafzal.rf.gd/mail.php", {
                 method: "POST",
                 body: formData,
             })
