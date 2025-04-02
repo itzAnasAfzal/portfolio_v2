@@ -367,45 +367,26 @@ $(function () {
     // --------------------------------------------- //
     // Contact Form Start
     // --------------------------------------------- //
-    // $("#contact-form").submit(function () {
-    //     //Change
-    //     var th = $(this);
-    //     $.ajax({
-    //         type: "POST",
-    //         url: "mail.php", //Change
-    //         data: th.serialize(),
-    //     }).done(function () {
-    //         $(".contact").find(".form").addClass("is-hidden");
-    //         $(".contact").find(".form__reply").addClass("is-visible");
-    //         setTimeout(function () {
-    //             // Done Functions
-    //             $(".contact").find(".form__reply").removeClass("is-visible");
-    //             $(".contact").find(".form").delay(300).removeClass("is-hidden");
-    //             th.trigger("reset");
-    //         }, 5000);
-    //     });
-    //     return false;
-    // });
-    document
-        .getElementById("contact-form")
-        .addEventListener("submit", function (e) {
-            e.preventDefault(); // Prevent default form submission
-
-            const formData = new FormData(this);
-
-            fetch("https://anasafzal.rf.gd/mail.php", {
-                method: "POST",
-                body: formData,
-            })
-                .then((response) => response.json())
-                .then((data) => {
-                    alert(data.message); // Show success/error message
-                })
-                .catch((error) => {
-                    console.error("Error:", error);
-                    alert("Something went wrong. Please try again later.");
-                });
+    $("#contact-form").submit(function () {
+        //Change
+        var th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize(),
+        }).done(function () {
+            $(".contact").find(".form").addClass("is-hidden");
+            $(".contact").find(".form__reply").addClass("is-visible");
+            setTimeout(function () {
+                // Done Functions
+                $(".contact").find(".form__reply").removeClass("is-visible");
+                $(".contact").find(".form").delay(300).removeClass("is-hidden");
+                th.trigger("reset");
+            }, 5000);
         });
+        return false;
+    });
+
     // --------------------------------------------- //
     // Contact Form End
     // --------------------------------------------- //
